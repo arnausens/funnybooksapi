@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Flavors&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/users.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <div class="users-wrapper">
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <label class="l-user" for="username">Username</label>
+            <input class="i-user" type='text' name='username' id='username'>
+
+            <label class="l-password" for="password">Password</label>
+            <input class="i-password" type="password" name="password" id="password">
+            <input class="button" type="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.users-wrapper { display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.l-user {
+    width: fit-content;
+    padding: 20px;
+    color: green;
+    font-size: 3em;
+    font-family: 'Varela Round', sans-serif;
+}
+.l-password {
+    width: fit-content;
+    padding: 20px;
+    color: #cea123;
+    font-size: 3em;
+    font-family: 'Varela Round', sans-serif;
+}
+.i-user {
+     box-sizing: border-box;
+     height: 40px;
+     width: 230px;
+     border: 1px solid green;
+     border-radius: 20px;
+     font-family: 'Varela Round', sans-serif;
+     font-size: 20px;
+     outline: none;
+     padding-left: 15px;
+}
+.i-password {
+     box-sizing: border-box;
+     height: 40px;
+     width: 230px;
+     border: 1px solid #cea123;
+     border-radius: 20px;
+     font-family: 'Varela Round', sans-serif;
+     font-size: 20px;
+     outline: none;
+     padding-left: 15px;
+}
+.button {
+    color: rgb(245, 245, 245);
+    height: 45px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: blue;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
